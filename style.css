@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+body{
+    color: #272727;
+    font-family: 'League Spartan', sans-serif;
+    overflow-x: hidden;
+}
+
+/* первая часть */
+
+.header-container{
+    display: flex;
+    width: auto;
+    padding-top: 104px;
+    padding-left: 267px;
+    padding-right: 133px;
+    padding-bottom: 168px;
+    background-color: #F8F8F8;
+}
+
+.header-title{
+    font-size: 24px;
+    line-height: 45px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.header-subtitle{
+    font-size: 250px;
+    line-height: 230px;
+    margin-bottom: 43px;
+}
+
+.header-description{
+    font-size: 32px;
+    line-height: 50px;
+    margin-bottom: 61px;
+}
+
+.buy-wrapper{
+    display: flex;
+    width: max-content;
+    transition: all .3s ease-in-out;
+}
+
+.buy-wrapper:hover {
+  -webkit-box-shadow: 13px 13px 15px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 13px 13px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 13px 13px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.buy-wrapper:hover .buy-link {
+  color: black;
+}
+
+.buy-wrapper:hover .buy-link::after {
+  left: 0;
+}
+
+.buy-wrapper:hover .price {
+  color: white;
+}
+
+.buy-wrapper:hover .price::after {
+  left: 0;
+}
+
+.buy-link{
+    display: block;
+    width: 278px;
+    height: 82px;
+    background-color: #161515;
+    color: #fff;
+    text-decoration: none;
+    font-size: 32px;
+    line-height: 82px;
+    text-align: center;
+    font-weight: 300;
+    transition: all .3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.buy-link::after {
+  content: '';
+  position: absolute;
+  top:0;
+  left:-100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: left 500ms ease-in-out; 
+  z-index: -1;
+}
+
+.price{
+    width: 143px;
+    height: 82px;
+    background-color: #fff;
+    color: black;
+    text-decoration: none;
+    font-size: 32px;
+    line-height: 82px;
+    text-align: center;
+    font-weight: 300;
+    transition: all .3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.price::after {
+  content: '';
+  position: absolute;
+  top:0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #161515;
+  transition: left 500ms ease-in-out; 
+  z-index: -1;
+}
+
+.header-img{
+    display: block;
+    width: 404px;
+    margin-top: 48px;
+    margin-left: 257px;
+}
+
+.popular-title{
+  font-size: 24px;
+  line-height: 45px;
+  text-align: center;
+  margin-top: 43px;
+  font-weight: 200;
+}
+
+.models-title{
+  font-size: 72px;
+  line-height: 81px;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 84px;
+  font-weight: 400;
+}
+
+/* 2-я часть */
+
+.item-wrapper{
+  display: flex;
+  gap: 63px;
+  padding-left: 268px;
+  padding-bottom: 25px;
+}
+
+.item-image-wrapper{
+  padding-top: 125px;
+  width: 417px;
+  height: 630px;
+  background-color: #f8f8f8;
+  margin-bottom: 67px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all .3s ease-in-out;
+}
+
+.item-image-wrapper:hover{
+  -webkit-box-shadow: 13px 12px 15px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 13px 12px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 13px 12px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.item-image-wrapper img {
+  width: 215px;
+}
+
+.item-image-wrapper .item-title {
+  font-size: 32px;
+  line-height: 30px;
+  text-align: center;
+  display: inline;
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+  color: black;
+}
+
+
+/* 3 часть */
+
+.specification-wrapper{
+  display: flex;
+  width: auto;
+  padding-top: 30px;
+  padding-left: 267px;
+  padding-right: 133px;
+  padding-bottom: 99px;
+  background-color: #F8F8F8;
+  background-image: url(./img/30-shadow-sfb-w_900x900.png);
+  background-repeat: no-repeat;
+  background-position-x: 146px;
+  background-position-y: -70px;
+  background-size: 600px;
+}
+
+.specification-title{
+  font-size: 72px;
+  line-height: 81px;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.specification-text{
+  text-align: left;
+  padding-left: 554px;
+  padding-top: 30px;
+  font-size: 27px;
+  margin-bottom: -65px;
+}
+
+li{
+  line-height: 45px;
+}
+
+/* 4 часть */
+
+.gallery-main{
+  padding-top: 100px;
+  margin-bottom: -43px;
+}
+
+.gallery-wrapper{
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(2, calc(100% - 162px));
+  grid-gap: 27px;
+  padding-left: 550px;
+}
+
+.photo{
+  width: 400px;
+}
+
+.gallery-title{
+  font-size: 72px;
+  line-height: 81px;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: -59px;
+  font-weight: 400;
+}
+
+/* 5 часть */
+
+.product-description-wrapper{
+    margin: 0 auto;
+    width: 417px;
+    margin-bottom: 85px;
+    margin-top: 100px;
+}
+
+.product-description-title{
+    text-align: center;
+    font-size: 32px;
+    line-height: 60px;
+    margin-bottom: 58px;
+    font-weight: 400;
+}
+
+.product-description{
+    font-weight: 300;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+a{
+    color: #BB8B5D;
+    font-weight: 500;
+}
+
+.product-description-title::after{
+  content: "";
+  border-bottom: 1px solid #707070;
+  width: 178px;
+  display: block;
+  position: absolute;
+  margin-left: 124px;
+}
+
+/* Футер */
+
+footer{
+  background-color: #222222;
+  color: white;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  justify-content: space-between;
+  padding: 0 1rem 0 1rem;
+}
+
+.footer-item {
+  width: 45%;
+}
+
+
+
+.connecting{
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+  text-align: right;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1080px) {
+
+  .header-container{
+    padding-top: 100px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 9px;
+}
+.header-title{
+  font-size: 24px;
+}
+
+.header-subtitle{
+  font-size: 140px;
+  line-height: 45px;
+  margin-bottom: 43px;
+}
+
+.header-description{
+  margin-top: 100px;
+  font-size: 17px;
+  line-height: 25px;
+  margin-bottom: 70px;
+}
+
+.buy-wrapper{
+  display: flex;
+}
+
+.buy-link{
+  width: 131px;
+  height: 59px;
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 64px;
+}
+
+.price{
+  width: 131px;
+  height: 59px;
+  font-size: 29px;
+  line-height: 71px;
+  text-align: center;
+  font-weight: 300;
+  z-index: 0;
+}
+
+.price::after {
+  content: '';
+  position: absolute;
+  top:0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #161515;
+  transition: left 500ms ease-in-out; 
+  z-index: -1;
+}
+
+.header-img{
+  display: none;
+}
+
+
+/* 2-я часть */
+
+.item-wrapper{
+  display: block;
+  padding-left: 5px;
+  padding-bottom: 25px;
+}
+
+.item-image-wrapper{
+  padding-top: 0;
+  padding-left: 0;
+  width: 100%;
+  height: 630px;
+  background-color: #f8f8f8;
+  margin-bottom: 67px;
+  
+}
+
+.item-image-wrapper img {
+  height: 450px;
+  width: auto;
+  padding-top: 50px;
+}
+
+/* 3 часть */
+
+.specification-wrapper{
+  display: flex;
+  width: auto;
+  padding-top: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 106px;
+  background-color: #F8F8F8;
+  background-image: none;
+}
+
+.specification-title{
+  font-size: 55px;
+  line-height: 81px;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.specification-text{
+  text-align: center;
+  padding-left: 0;
+  padding-top: 30px;
+  font-size: 21px;
+  margin-bottom: -53px;
+}
+
+/* 4 часть */
+
+.gallery-main{
+  padding-top: 100px;
+  margin-bottom: -43px;
+}
+
+.gallery-wrapper{
+  margin: 100px auto;
+  padding-left: 41px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo{
+  width: 300px;
+}
+
+.gallery-title{
+  font-size: 72px;
+  line-height: 81px;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: -59px;
+  font-weight: 400;
+}
+
+/* 5 часть */
+
+.product-description-wrapper{
+  width: 344px;
+}
+
+.product-description-title::after{
+margin-left: 84px;
+} 
+
+}
